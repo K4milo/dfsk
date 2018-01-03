@@ -2515,20 +2515,34 @@ body.home .video-rows .video-rows--video-post {
     color: #ffffff; }
     body.home .video-rows .video-rows--video-post .container .description img {
       max-width: 100%; }
-    body.home .video-rows .video-rows--video-post .container .description h3 strong {
-      color: #e10e20;
-      font-weight: inherit; }
-    body.home .video-rows .video-rows--video-post .container .description ul li {
-      font-size: 0.875em; }
+    body.home .video-rows .video-rows--video-post .container .description h3 {
+      font-size: 1.125em;
+      text-transform: uppercase; }
+      body.home .video-rows .video-rows--video-post .container .description h3 strong {
+        color: #e10e20;
+        font-weight: inherit; }
+    body.home .video-rows .video-rows--video-post .container .description ul {
+      padding: 0; }
+      body.home .video-rows .video-rows--video-post .container .description ul li {
+        font-size: 0.875em;
+        margin-bottom: 1.125em; }
+  @media (min-width: 1200px) {
+    body.home .video-rows .video-rows--video-post .container .gallery {
+      height: 17.25em;
+      overflow-y: auto; } }
   body.home .video-rows .video-rows--video-post .container .gallery .item-gallery {
     overflow: hidden;
     width: 96%;
-    margin: 0 2% 2%; }
+    margin: 0 2% 2% 2%; }
     @media (min-width: 1200px) {
       body.home .video-rows .video-rows--video-post .container .gallery .item-gallery {
         display: inline-block;
-        width: 44%;
-        margin: 0 2% 3%; } }
+        width: 47%;
+        margin: 0 2% 3%; }
+        body.home .video-rows .video-rows--video-post .container .gallery .item-gallery:nth-child(even) {
+          margin-right: 0; }
+        body.home .video-rows .video-rows--video-post .container .gallery .item-gallery:nth-child(odd) {
+          margin-left: 0; } }
     body.home .video-rows .video-rows--video-post .container .gallery .item-gallery img {
       width: 100%;
       height: auto; }
@@ -2538,7 +2552,7 @@ body.home .video-rows .video-rows--video-post {
     content: "";
     display: block;
     position: absolute;
-    bottom: 0;
+    bottom: -3px;
     left: 50%;
     background-color: #ffffff;
     transform: translateX(-50%);

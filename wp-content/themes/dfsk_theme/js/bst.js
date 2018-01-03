@@ -65,7 +65,9 @@
 	});
 
 
-
+  $(".gallery").mCustomScrollbar({
+    theme:"inset-2"
+  });
 	
 
 }(jQuery));

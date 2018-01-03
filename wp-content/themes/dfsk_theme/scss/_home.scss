@@ -117,27 +117,41 @@ body {
 							max-width: 100%;
 						}
 						h3{
+							font-size: em(18);
+							text-transform: uppercase;
 							strong{
 								color: $red;
 								font-weight: inherit;
 							}
 						}
 						ul {
+							padding: 0;
 							li {
 								font-size: em(14);
+								margin-bottom: em(18);
 							}
 						}
 					}
 					// Gallery
 					.gallery {
+						@include desktop {
+							height: em(276);
+							overflow-y: auto;
+						}
 						.item-gallery {
 							overflow: hidden;
 							width: 96%;
-							margin: 0 2% 2%;
+							margin: 0 2% 2% 2%;
 							@include desktop {
 								display: inline-block;
-								width: 44%;
+								width: 47%;
 								margin: 0 2% 3%;
+								&:nth-child(even) {
+									margin-right: 0;
+								}
+								&:nth-child(odd) {
+									margin-left: 0;
+								}
 							}
 							img{
 								width: 100%;
@@ -156,7 +170,7 @@ body {
 						content: "";
 						display: block;
 						position: absolute;
-						bottom: 0;
+						bottom: -3px;
 						left: 50%;
 						background-color: $white;
 						transform: translateX(-50%);

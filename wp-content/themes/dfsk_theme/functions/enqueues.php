@@ -19,6 +19,9 @@ function bst_enqueues() {
 	wp_register_style('animate-css', get_template_directory_uri() . '/css/vendors/animate.css', false, null);
 	wp_enqueue_style('animate-css');
 
+	wp_register_style('scroll-css', get_template_directory_uri() . '/css/vendors/jquery.mCustomScrollbar.min.css', false, null);
+	wp_enqueue_style('scroll-css');
+
 	wp_register_style('styles-css', get_template_directory_uri() . '/css/styles.css', false, null);
 	wp_enqueue_style('styles-css');
 
@@ -39,6 +42,9 @@ function bst_enqueues() {
 
 	wp_register_script('wow-js', get_template_directory_uri() . '/js/vendors/wow.js', false, null, true);
 	wp_enqueue_script('wow-js');
+
+	wp_register_script('scroller-js', get_template_directory_uri() . '/js/vendors/jquery.mCustomScrollbar.min.js', false, null, true);
+	wp_enqueue_script('scroller-js');
 
 	wp_register_script('waypoints-js', get_template_directory_uri() . '/js/vendors/waypoints.js', false, null, true);
 	wp_enqueue_script('waypoints-js');
