@@ -34,6 +34,9 @@
             );
         ?>
     </div><!-- /.navbar-collapse -->
+    <div class="sponsor">
+      <img src="<?php bloginfo('template_url')?>/img/logos/prado_logo.png" alt="Prado Didacol"/>
+    </div>
   </div><!-- /.container -->
 </nav>
   
