@@ -83,6 +83,15 @@ $browser-context: 16; // Default
   }
 }
 
+@mixin btn {
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $red;
+  color: $white;
+  padding: em(10) em(20);
+}
+
 
 @mixin fa-icon($ico,$col,$siz) {
   font-size: $siz;

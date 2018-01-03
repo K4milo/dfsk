@@ -1,0 +1,184 @@
+body {
+	&.home {
+		//slider
+		.hero-slider {
+			.full-slider {
+				padding: 0;
+				li {
+					position: relative;
+					img {
+						max-width: 100%;
+						height: auto;
+					}
+					.full-slider--txt {
+						position: relative;
+						text-align: center;
+						@include desktop {
+							position: absolute;
+							top: 0;
+							right: 0;
+							width: 44%;
+							text-align: right;
+							padding: em(30) em(40);
+						}
+						h2 {
+							font-size: em(25);
+							color: $grey;
+							letter-spacing: em(4);
+							@include desktop {
+								font-size: em(50);
+								text-transform: uppercase;
+								letter-spacing: em(4);
+								padding: 0 0 em(20);
+							}
+							strong {
+								font-weight: inherit;
+								color: $red;
+							}
+						}
+						p {
+							color: $grey-1;
+							font-size: em(18);
+							letter-spacing: em(4);
+							@include desktop {
+								max-width: em(332);
+								display: inline-block;
+							} 
+							strong {
+								font-weight: inherit;
+								color: $red;
+							}
+							a {
+								@include btn;
+								letter-spacing: normal;
+							}
+						}
+					}
+				}
+				//controls
+				.slick-arrow {
+					&.slick-prev {
+						left: em(23);
+						z-index: 10;
+						&::before {
+							@include fa-icon("\f053",$red,20px);
+						}
+					}
+					&.slick-next {
+						right: em(23);
+						z-index: 10;
+						&::before {
+							@include fa-icon("\f054",$red,20px);
+						}
+					}
+				}
+				//pager
+				.slick-dots {
+					li {
+						&.slick-active {
+							button {
+								&::before {
+									font-size: 15px;
+									color: $red;
+									border-color: $red;
+								}
+							}
+						}
+						button {
+							&::before {
+								font-size: 15px;
+								color: $grey;
+								border-color: $grey;
+							}
+						}
+					}
+				}
+			}
+		}// eof slider
+		
+		//rows
+		.video-rows{
+			.video-rows--video-post {
+				position: relative;
+				padding: em(50) 0;
+				background: #6a7780; /* Old browsers */
+				background: -moz-linear-gradient(45deg, #6a7780 1%, #16191e 48%, #0c0d11 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(45deg, #6a7780 1%,#16191e 48%,#0c0d11 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(45deg, #6a7780 1%,#16191e 48%,#0c0d11 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6a7780', endColorstr='#0c0d11',GradientType=1 );
+				@include desktop {
+					padding: em(120) 0;
+				}
+				.container {
+					@include clearfix;
+					.description {
+						color: $white;
+						img {
+							max-width: 100%;
+						}
+						h3{
+							strong{
+								color: $red;
+								font-weight: inherit;
+							}
+						}
+						ul {
+							li {
+								font-size: em(14);
+							}
+						}
+					}
+					// Gallery
+					.gallery {
+						.item-gallery {
+							overflow: hidden;
+							width: 96%;
+							margin: 0 2% 2%;
+							@include desktop {
+								display: inline-block;
+								width: 44%;
+								margin: 0 2% 3%;
+							}
+							img{
+								width: 100%;
+								height: auto;
+							}
+						}
+					}
+					//video
+					.the-video {
+						video {
+							width: 100%;
+						}
+					}
+					
+					&::after {
+						content: "";
+						display: block;
+						position: absolute;
+						bottom: 0;
+						left: 50%;
+						background-color: $white;
+						transform: translateX(-50%);
+						width: 40%;
+						height: em(6);
+					}
+				}
+				&:nth-child(even){
+					background: #0c0d11; /* Old browsers */
+					background: -moz-linear-gradient(45deg, #0c0d11 1%, #16191e 48%, #6a7780 100%); /* FF3.6-15 */
+					background: -webkit-linear-gradient(45deg, #0c0d11 1%,#16191e 48%,#6a7780 100%); /* Chrome10-25,Safari5.1-6 */
+					background: linear-gradient(45deg, #0c0d11 1%,#16191e 48%,#6a7780 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c0d11', endColorstr='#6a7780',GradientType=1 );
+					.container {
+						> div{
+							@include desktop {
+								float: right;
+							}
+						}
+					}
+				}
+			}
+		}//eof videos
+	}
+}
