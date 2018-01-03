@@ -1,0 +1,68 @@
+body {
+	.navbar {
+		background-color: $lgrey;
+		.container-fluid {
+			//logo
+			.navbar-header {
+				float: none;
+				display: inline-block;
+				vertical-align: middle;
+				.navbar-brand {
+					float: none;
+					display: block;
+					width: 336px;
+					height: 54px;
+					background-image: url('../img/logos/logo.png');
+					background-size: contain;
+					background-repeat: no-repeat;
+					text-indent: -9999999px;
+					padding: 0;
+					margin: 0;
+				}
+			}
+			//menu
+			#navbar {
+				vertical-align: middle;
+				width: 100%;
+				@include desktop {
+					display: inline-block !important;
+					width: 54%;
+					text-align: center;
+				}
+				ul {
+					&.menu {
+						display: inline-block;
+						padding: 0;
+						margin: 0;
+						li {
+							display: inline-block;
+							vertical-align: top;
+							a {
+								display: block;
+								color: $black;
+								font-size: em(18);
+								text-align: center;
+								padding: em(40) em(32);
+								font-family: $bold;
+								border-bottom: em(4) solid $lgrey;
+								&:hover {
+									background-color: $black;
+									color: $white;
+									border-color: $red;
+								}
+							}
+						}
+					}
+				}
+			}
+			//Sponsor
+			.sponsor {
+				display: inline-block;
+				vertical-align: middle;
+				img {
+					max-width: 100%;
+				}
+			}
+		}
+	}
+}

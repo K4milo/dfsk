@@ -118,5 +118,12 @@ $browser-context: 16; // Default
 }
 
 body {
-	
+	font-family: $regular;
+  font-size: 16px;
+  a{
+    transition: all 0.3s;
+    &:hover{
+      transition: all 0.3s;
+    }
+  }
 }
