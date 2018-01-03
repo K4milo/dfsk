@@ -1,5 +1,5 @@
 
-<div class="hero-slider">
+<div class="hero-slider container">
 	<ul class="full-slider">
 	<?php if(have_posts()): while(have_posts()): the_post(); 
 

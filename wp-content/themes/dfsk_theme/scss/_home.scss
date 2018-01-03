@@ -7,7 +7,7 @@ body {
 				li {
 					position: relative;
 					img {
-						max-width: 100%;
+						max-width: 80%;
 						height: auto;
 					}
 					.full-slider--txt {
@@ -26,7 +26,7 @@ body {
 							color: $grey;
 							letter-spacing: em(4);
 							@include desktop {
-								font-size: em(50);
+								font-size: em(40);
 								text-transform: uppercase;
 								letter-spacing: em(4);
 								padding: 0 0 em(20);
