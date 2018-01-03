@@ -17,7 +17,7 @@
 <![endif]-->
 
 <nav class="navbar navbar-default navbar-static-top">
-  <div class="container">
+  <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
         <span class="sr-only">Toggle navigation</span>
@@ -34,6 +34,9 @@
             );
         ?>
     </div><!-- /.navbar-collapse -->
+    <div class="sponsor">
+      <img src="<?php bloginfo('template_url')?>/img/logos/prado_logo.png" alt="Prado Didacol"/>
+    </div>
   </div><!-- /.container -->
 </nav>
   
