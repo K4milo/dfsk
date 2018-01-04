@@ -207,6 +207,7 @@ body {
 				height: 50%;
 				background-image: url('../img/misc/bg-cars.jpg');
 				background-attachment: fixed;
+				background-size: cover;
 				z-index: -1;
 				@include mobile {
 					height: 100%;

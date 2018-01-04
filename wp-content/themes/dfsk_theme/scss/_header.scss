@@ -1,12 +1,33 @@
 body {
 	.navbar {
 		background-color: $lgrey;
+		transition: all 0.5s;
+		&.affix{
+			width: 100%;
+			transition: all 0.5s;
+			.container-fluid {
+				#navbar {
+					ul {
+						&.menu {
+							li {
+								a {
+									padding: em(20) em(32);
+									transition: all 0.5s;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 		.container-fluid {
 			//logo
 			.navbar-header {
-				float: none;
-				display: inline-block;
-				vertical-align: middle;
+				@include desktop {
+					float: none;
+					display: inline-block;
+					vertical-align: middle;
+				}
 				.navbar-brand {
 					float: none;
 					display: block;
@@ -18,12 +39,21 @@ body {
 					text-indent: -9999999px;
 					padding: 0;
 					margin: 0;
+					@include mobile {
+						width: 230px;
+						height: 50px;
+					}
 				}
 			}
 			//menu
 			#navbar {
 				vertical-align: middle;
 				width: 100%;
+				@include tablet {
+					display: inline-block !important;
+					width: 100%;
+					text-align: left;
+				}
 				@include desktop {
 					display: inline-block !important;
 					width: 54%;
@@ -31,24 +61,46 @@ body {
 				}
 				ul {
 					&.menu {
-						display: inline-block;
 						padding: 0;
 						margin: 0;
-						li {
+						list-style: none;
+						@include tablet {
 							display: inline-block;
-							vertical-align: top;
+							vertical-align: middle;
+						}
+						@include desktop {
+							display: inline-block;
+							vertical-align: middle;
+						}
+						li {
+							@include desktop {
+								display: inline-block;
+								vertical-align: top;
+							}
+							@include tablet {
+								display: inline-block;
+								vertical-align: middle;
+							}
 							a {
 								display: block;
 								color: $black;
 								font-size: em(18);
 								text-align: center;
-								padding: em(40) em(32);
+								padding: em(30) em(32);
+								transition: all 0.3s;
+								text-transform: uppercase;
 								font-family: $bold;
 								border-bottom: em(4) solid $lgrey;
 								&:hover {
 									background-color: $black;
 									color: $white;
 									border-color: $red;
+								}
+								@include tablet {
+									padding: em(20);
+								}
+								@include mobile {
+									padding: em(12);
 								}
 							}
 						}
@@ -57,6 +109,15 @@ body {
 			}
 			//Sponsor
 			.sponsor {
+				@include tablet {
+					display: block;
+					position: absolute;
+					top: 17px;
+					right: 41px;
+				}
+				@include mobile {
+					display: none;
+				}
 				display: inline-block;
 				vertical-align: middle;
 				img {

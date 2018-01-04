@@ -64,6 +64,13 @@
 		arrows: false
 	});
 
+  $('.navbar').affix({
+      offset: {
+          top: 100
+        }
+  }); 
+
+
 
   $(".gallery").mCustomScrollbar({
     theme:"inset-2"
