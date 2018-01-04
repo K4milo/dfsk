@@ -144,13 +144,10 @@ body {
 							margin: 0 2% 2% 2%;
 							@include desktop {
 								display: inline-block;
-								width: 47%;
+								width: 45%;
 								margin: 0 2% 3%;
-								&:nth-child(even) {
-									margin-right: 0;
-								}
-								&:nth-child(odd) {
-									margin-left: 0;
+								&:nth-child(3n) {
+									width: 95%;
 								}
 							}
 							img{
@@ -170,7 +167,7 @@ body {
 						content: "";
 						display: block;
 						position: absolute;
-						bottom: -3px;
+						bottom: -1.5px;
 						left: 50%;
 						background-color: $white;
 						transform: translateX(-50%);
@@ -194,5 +191,60 @@ body {
 				}
 			}
 		}//eof videos
+
+		//Single rows
+		.single-rows {
+			padding: em(50) 0;
+			position:relative;
+			@include desktop {
+				padding: em(120) 0 em(60);
+			}
+			.backwards {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 50%;
+				background-image: url('../img/misc/bg-cars.jpg');
+				background-attachment: fixed;
+				z-index: -1;
+				@include mobile {
+					height: 100%;
+				}
+			}
+			article {
+				figure {
+					display: block;
+					width: 100%;
+					margin: inherit;
+					img {
+						width: 100%;
+					}
+				}
+				h3 {
+					font-size: em(24);
+					color: $black;
+					font-family: $bold;
+					text-transform: uppercase;
+					@include mobile {
+						color: $white;
+					}
+				}
+				p {
+					text-transform: uppercase;
+					font-size: em(27);
+					letter-spacing: em(3);
+					@include mobile {
+						color: $white;
+					}
+					span {
+						color: $red;
+						@include mobile {
+							color: $white;
+						}
+					}
+				}
+			}
+		}//EOF Single rows
 	}
 }

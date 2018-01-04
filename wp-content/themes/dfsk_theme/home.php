@@ -8,4 +8,6 @@ get_template_part('includes/header'); ?>
 
 <?php get_template_part('includes/loops/content', 'vehicles'); ?>
 
+<?php get_template_part('includes/loops/content', 'simplevehicles'); ?>
+
 <?php get_template_part('includes/footer'); ?>

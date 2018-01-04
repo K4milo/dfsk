@@ -2537,12 +2537,10 @@ body.home .video-rows .video-rows--video-post {
     @media (min-width: 1200px) {
       body.home .video-rows .video-rows--video-post .container .gallery .item-gallery {
         display: inline-block;
-        width: 47%;
+        width: 45%;
         margin: 0 2% 3%; }
-        body.home .video-rows .video-rows--video-post .container .gallery .item-gallery:nth-child(even) {
-          margin-right: 0; }
-        body.home .video-rows .video-rows--video-post .container .gallery .item-gallery:nth-child(odd) {
-          margin-left: 0; } }
+        body.home .video-rows .video-rows--video-post .container .gallery .item-gallery:nth-child(3n) {
+          width: 95%; } }
     body.home .video-rows .video-rows--video-post .container .gallery .item-gallery img {
       width: 100%;
       height: auto; }
@@ -2552,7 +2550,7 @@ body.home .video-rows .video-rows--video-post {
     content: "";
     display: block;
     position: absolute;
-    bottom: -3px;
+    bottom: -1.5px;
     left: 50%;
     background-color: #ffffff;
     transform: translateX(-50%);
@@ -2571,3 +2569,48 @@ body.home .video-rows .video-rows--video-post {
     @media (min-width: 1200px) {
       body.home .video-rows .video-rows--video-post:nth-child(even) .container > div {
         float: right; } }
+
+body.home .single-rows {
+  padding: 3.125em 0;
+  position: relative; }
+  @media (min-width: 1200px) {
+    body.home .single-rows {
+      padding: 7.5em 0 3.75em; } }
+  body.home .single-rows .backwards {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-image: url("../img/misc/bg-cars.jpg");
+    background-attachment: fixed;
+    z-index: -1; }
+    @media (max-width: 767px) {
+      body.home .single-rows .backwards {
+        height: 100%; } }
+  body.home .single-rows article figure {
+    display: block;
+    width: 100%;
+    margin: inherit; }
+    body.home .single-rows article figure img {
+      width: 100%; }
+  body.home .single-rows article h3 {
+    font-size: 1.5em;
+    color: #000000;
+    font-family: "PT Sans Bold";
+    text-transform: uppercase; }
+    @media (max-width: 767px) {
+      body.home .single-rows article h3 {
+        color: #ffffff; } }
+  body.home .single-rows article p {
+    text-transform: uppercase;
+    font-size: 1.6875em;
+    letter-spacing: 0.1875em; }
+    @media (max-width: 767px) {
+      body.home .single-rows article p {
+        color: #ffffff; } }
+    body.home .single-rows article p span {
+      color: #e10e20; }
+      @media (max-width: 767px) {
+        body.home .single-rows article p span {
+          color: #ffffff; } }
