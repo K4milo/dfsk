@@ -70,7 +70,32 @@
         }
   }); 
 
+  if($(window).width() > 768){
+    //click modal on gallery
+    $('.gallery .item-gallery').each(function(index, el) {
+        //instance
+        var $this = $(this);   
 
+        $this.on('click', function(event) {
+          event.preventDefault();
+
+          var $imagePath = $(this).data('modal'); 
+          /* Act on the event */
+          $('.con-modal').show();
+
+          $('.con-modal figure img').remove();
+
+          $('.con-modal figure').html('<img src="'+ $imagePath +'">');
+
+        });
+    });
+
+    $('.con-modal .close-modal').click(function(event) {
+      /* Act on the event */
+      $(this).parent('.con-modal').hide();
+    });
+
+  }
 
   $(".gallery").mCustomScrollbar({
     theme:"inset-2"

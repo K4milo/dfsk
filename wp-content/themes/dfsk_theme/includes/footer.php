@@ -22,6 +22,13 @@
   </div>
 </footer>
 
+<div class="con-modal">
+  <div class="close-modal"><i class="fa fa-times" aria-hidden="true"></i></div>
+  <div class="wrap-fix">
+      <figure></figure>
+  </div>
+</div>
+
 <?php wp_footer(); ?>
 </body>
 </html>

@@ -120,7 +120,6 @@ $browser-context: 16; // Default
 }
 
 @mixin centerer {
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -133,6 +132,49 @@ body {
     transition: all 0.3s;
     &:hover{
       transition: all 0.3s;
+    }
+  }
+
+  //Modal sltyle
+  .con-modal {
+    display: none;
+    background-color: rgba(0,0,0,0.75);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    .close-modal {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: em(40);
+      height: em(36);
+      text-align: center;
+      background-color: $black;
+      cursor: pointer;
+      z-index: 9999;
+      i {
+        color: $white;
+        line-height: em(36);
+      }
+    }
+    .wrap-fix {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow-x: auto;
+      figure {
+        position: absolute;
+        padding: em(13);
+        @include centerer;
+        img {
+          max-width: 100%;
+        }
+      }
     }
   }
 }

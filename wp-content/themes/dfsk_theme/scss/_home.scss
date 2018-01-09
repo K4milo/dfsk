@@ -142,12 +142,16 @@ body {
 							overflow: hidden;
 							width: 96%;
 							margin: 0 2% 2% 2%;
+							cursor: pointer;
 							@include desktop {
 								display: inline-block;
 								width: 45%;
 								margin: 0 2% 3%;
 								&:nth-child(3n) {
 									width: 95%;
+								}
+								&:hover {
+									opacity:0.75;
 								}
 							}
 							img{
