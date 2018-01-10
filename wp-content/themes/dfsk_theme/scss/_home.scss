@@ -4,10 +4,11 @@ body {
 		.hero-slider {
 			.full-slider {
 				padding: 0;
+				margin: 0;
 				li {
 					position: relative;
 					img {
-						max-width: 80%;
+						width: 100%;
 						height: auto;
 					}
 					.full-slider--txt {
@@ -74,6 +75,7 @@ body {
 				}
 				//pager
 				.slick-dots {
+					bottom: 10px;
 					li {
 						&.slick-active {
 							button {
@@ -88,7 +90,7 @@ body {
 							&::before {
 								font-size: 15px;
 								color: $grey;
-								border-color: $grey;
+								border-color: $white;
 							}
 						}
 					}
@@ -129,6 +131,19 @@ body {
 							li {
 								font-size: em(14);
 								margin-bottom: em(18);
+								list-style: none;
+								position: relative;
+								img {
+									margin-top: em(12);
+								}
+								&::before {
+									content: "• ";
+									color: $red;
+									position: absolute;
+									left: -18px;
+									top: -8px;
+									font-size: em(25);
+								}
 							}
 						}
 					}

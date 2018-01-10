@@ -2400,7 +2400,8 @@ body {
 
 body .navbar {
   background-color: #dfdfdf;
-  transition: all 0.5s; }
+  transition: all 0.5s;
+  margin: 0; }
   body .navbar.affix {
     width: 100%;
     transition: all 0.5s; }
@@ -2533,11 +2534,12 @@ body .navbar {
             color: #ffffff; }
 
 body.home .hero-slider .full-slider {
-  padding: 0; }
+  padding: 0;
+  margin: 0; }
   body.home .hero-slider .full-slider li {
     position: relative; }
     body.home .hero-slider .full-slider li img {
-      max-width: 80%;
+      width: 100%;
       height: auto; }
     body.home .hero-slider .full-slider li .full-slider--txt {
       position: relative;
@@ -2604,14 +2606,16 @@ body.home .hero-slider .full-slider {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale; }
-  body.home .hero-slider .full-slider .slick-dots li.slick-active button::before {
-    font-size: 15px;
-    color: #e10e20;
-    border-color: #e10e20; }
-  body.home .hero-slider .full-slider .slick-dots li button::before {
-    font-size: 15px;
-    color: #606060;
-    border-color: #606060; }
+  body.home .hero-slider .full-slider .slick-dots {
+    bottom: 10px; }
+    body.home .hero-slider .full-slider .slick-dots li.slick-active button::before {
+      font-size: 15px;
+      color: #e10e20;
+      border-color: #e10e20; }
+    body.home .hero-slider .full-slider .slick-dots li button::before {
+      font-size: 15px;
+      color: #606060;
+      border-color: #ffffff; }
 
 body.home .video-rows .video-rows--video-post {
   position: relative;
@@ -2646,7 +2650,18 @@ body.home .video-rows .video-rows--video-post {
       padding: 0; }
       body.home .video-rows .video-rows--video-post .container .description ul li {
         font-size: 0.875em;
-        margin-bottom: 1.125em; }
+        margin-bottom: 1.125em;
+        list-style: none;
+        position: relative; }
+        body.home .video-rows .video-rows--video-post .container .description ul li img {
+          margin-top: 0.75em; }
+        body.home .video-rows .video-rows--video-post .container .description ul li::before {
+          content: "• ";
+          color: #e10e20;
+          position: absolute;
+          left: -18px;
+          top: -8px;
+          font-size: 1.5625em; }
   @media (min-width: 1200px) {
     body.home .video-rows .video-rows--video-post .container .gallery {
       height: 17.25em;
