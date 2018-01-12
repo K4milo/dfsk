@@ -2664,22 +2664,27 @@ body.home .video-rows .video-rows--video-post {
           font-size: 1.5625em; }
   @media (min-width: 1200px) {
     body.home .video-rows .video-rows--video-post .container .gallery {
-      height: 17.25em;
+      height: 31.625em;
       overflow-y: auto; } }
   body.home .video-rows .video-rows--video-post .container .gallery .item-gallery {
     overflow: hidden;
     width: 96%;
     margin: 0 2% 2% 2%;
-    cursor: pointer; }
-    @media (min-width: 1200px) {
-      body.home .video-rows .video-rows--video-post .container .gallery .item-gallery {
-        display: inline-block;
-        width: 45%;
-        margin: 0 2% 3%; }
-        body.home .video-rows .video-rows--video-post .container .gallery .item-gallery:nth-child(3n) {
-          width: 95%; }
-        body.home .video-rows .video-rows--video-post .container .gallery .item-gallery:hover {
-          opacity: 0.75; } }
+    cursor: pointer;
+    /*
+							@include desktop {
+								display: inline-block;
+								width: 45%;
+								margin: 0 2% 3%;
+								&:nth-child(3n) {
+									width: 95%;
+								}
+								&:hover {
+									opacity:0.75;
+								}
+							}*/ }
+    body.home .video-rows .video-rows--video-post .container .gallery .item-gallery:hover {
+      opacity: 0.75; }
     body.home .video-rows .video-rows--video-post .container .gallery .item-gallery img {
       width: 100%;
       height: auto; }
