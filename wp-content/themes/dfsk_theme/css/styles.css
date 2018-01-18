@@ -2416,7 +2416,7 @@ body .navbar {
   body .navbar .container-fluid .navbar-header .navbar-brand {
     float: none;
     display: block;
-    width: 336px;
+    width: 481px;
     height: 54px;
     background-image: url("../img/logos/logo.png");
     background-size: contain;
@@ -2495,6 +2495,45 @@ body .navbar {
         display: none; } }
     body .navbar .container-fluid .sponsor img {
       max-width: 100%; }
+
+#contact-form {
+  background-color: #c9c9c9; }
+  #contact-form:after {
+    content: "";
+    display: table;
+    clear: both; }
+  #contact-form > div {
+    min-height: 26em; }
+    @media (min-width: 1200px) {
+      #contact-form > div {
+        min-height: 38.5em; } }
+    #contact-form > div.img-holder {
+      background-image: url("../img/misc/bg_form.jpg");
+      background-size: cover;
+      background-position: bottom right; }
+    #contact-form > div.form-wrapper h2 {
+      text-align: center;
+      text-transform: uppercase; }
+    #contact-form > div.form-wrapper .wpcf7 form {
+      max-width: 28.125em;
+      margin: 1em auto; }
+      #contact-form > div.form-wrapper .wpcf7 form .wpcf7-form-control-wrap input {
+        background-color: rgba(255, 255, 255, 0.4); }
+        #contact-form > div.form-wrapper .wpcf7 form .wpcf7-form-control-wrap input[type="text"], #contact-form > div.form-wrapper .wpcf7 form .wpcf7-form-control-wrap input[type="email"] {
+          border-radius: 1em;
+          box-shadow: inset 0 0 0.75em #606060; }
+      #contact-form > div.form-wrapper .wpcf7 form .wpcf7-form-control-wrap textarea {
+        background-color: rgba(255, 255, 255, 0.4);
+        box-shadow: inset 0 0 0.75em #606060; }
+      #contact-form > div.form-wrapper .wpcf7 form .btn.btn-primary {
+        background-color: #e10e20;
+        display: block;
+        min-width: 18.75em;
+        text-align: center;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 0.75em;
+        margin: 1em auto; }
 
 .site-footer {
   background-color: #434343;
