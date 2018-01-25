@@ -150,7 +150,7 @@ body {
 					// Gallery
 					.gallery {
 						@include desktop {
-							height: em(506);
+							height: em(706);
 							overflow-y: auto;
 						}
 						.item-gallery {
@@ -245,11 +245,19 @@ body {
 						width: 100%;
 					}
 				}
+				.txt {
+					img {
+						max-width: 100%;
+						margin: em(10) auto;
+						display: block;
+					}
+				}
 				h3 {
 					font-size: em(24);
 					color: $black;
 					font-family: $bold;
 					text-transform: uppercase;
+					text-align: center;
 					@include mobile {
 						color: $white;
 					}

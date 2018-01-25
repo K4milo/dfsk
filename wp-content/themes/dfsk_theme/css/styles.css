@@ -2703,7 +2703,7 @@ body.home .video-rows .video-rows--video-post {
           font-size: 1.5625em; }
   @media (min-width: 1200px) {
     body.home .video-rows .video-rows--video-post .container .gallery {
-      height: 31.625em;
+      height: 44.125em;
       overflow-y: auto; } }
   body.home .video-rows .video-rows--video-post .container .gallery .item-gallery {
     overflow: hidden;
@@ -2778,11 +2778,16 @@ body.home .single-rows {
     margin: inherit; }
     body.home .single-rows article figure img {
       width: 100%; }
+  body.home .single-rows article .txt img {
+    max-width: 100%;
+    margin: 0.625em auto;
+    display: block; }
   body.home .single-rows article h3 {
     font-size: 1.5em;
     color: #000000;
     font-family: "PT Sans Bold";
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    text-align: center; }
     @media (max-width: 767px) {
       body.home .single-rows article h3 {
         color: #ffffff; } }
