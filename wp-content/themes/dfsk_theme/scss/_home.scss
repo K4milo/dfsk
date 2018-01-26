@@ -126,6 +126,9 @@ body {
 								font-weight: inherit;
 							}
 						}
+						video {
+							width: 100%;
+						}
 						ul {
 							padding: 0;
 							li {
@@ -150,41 +153,43 @@ body {
 					// Gallery
 					.gallery {
 						@include desktop {
-							height: em(706);
 							overflow-y: auto;
 						}
 						.item-gallery {
 							overflow: hidden;
 							width: 96%;
-							margin: 0 2% 2% 2%;
+							margin: 2%;
 							cursor: pointer;
 							&:hover {
 								opacity:0.75;
 							}
-							/*
+							
 							@include desktop {
 								display: inline-block;
 								width: 45%;
-								margin: 0 2% 3%;
-								&:nth-child(3n) {
-									width: 95%;
-								}
+								vertical-align: top;
+								margin: 4% 2%;
 								&:hover {
-									opacity:0.75;
+									opacity:0.75; 
 								}
-							}*/
+							}
 							img{
 								width: 100%;
 								height: auto;
+								@include desktop {
+									width: auto;
+									height: 240px;
+								}
 							}
 						}
 					}
 					//video
-					.the-video {
-						video {
-							width: 100%;
-						}
+					
+					video {
+						width: 100%;
+						height: em(374);
 					}
+					
 					
 					&::after {
 						content: "";

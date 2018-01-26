@@ -71,6 +71,17 @@
   }); 
 
   if($(window).width() > 768){
+
+    //scrolling bs
+    $('.video-rows--video-post').each(function(index,el){
+  
+      var $description = $(this).find('.description'),
+        $gallery = $(this).find('.gallery');
+            
+      $gallery.css('height', $description.outerHeight())
+    });
+
+
     //click modal on gallery
     $('.gallery .item-gallery').each(function(index, el) {
         //instance
