@@ -3,6 +3,7 @@ body {
 		background-color: $lgrey;
 		transition: all 0.5s;
 		margin: 0;
+		padding: em(20) 0;
 		&.affix{
 			width: 100%;
 			transition: all 0.5s;

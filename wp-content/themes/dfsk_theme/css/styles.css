@@ -2401,7 +2401,8 @@ body {
 body .navbar {
   background-color: #dfdfdf;
   transition: all 0.5s;
-  margin: 0; }
+  margin: 0;
+  padding: 1.25em 0; }
   body .navbar.affix {
     width: 100%;
     transition: all 0.5s; }
@@ -2705,7 +2706,8 @@ body.home .video-rows .video-rows--video-post {
           font-size: 1.5625em; }
   @media (min-width: 1200px) {
     body.home .video-rows .video-rows--video-post .container .gallery {
-      overflow-y: auto; } }
+      overflow-y: auto;
+      max-height: 60.625em; } }
   body.home .video-rows .video-rows--video-post .container .gallery .item-gallery {
     overflow: hidden;
     width: 96%;

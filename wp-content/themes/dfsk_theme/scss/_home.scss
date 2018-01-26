@@ -154,6 +154,7 @@ body {
 					.gallery {
 						@include desktop {
 							overflow-y: auto;
+							max-height: em(970);
 						}
 						.item-gallery {
 							overflow: hidden;
@@ -161,7 +162,7 @@ body {
 							margin: 2%;
 							cursor: pointer;
 							&:hover {
-								opacity:0.75;
+								opacity:0.75; 
 							}
 							
 							@include desktop {
