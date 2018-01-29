@@ -9,8 +9,10 @@
 
 		&.img-holder {
 			background-image: url('../img/misc/bg_form.png');
-			background-size: cover;
-			background-position: center center; 
+			background-repeat: no-repeat;
+			background-color: $black;
+			background-size: contain;
+			background-position: bottom center; 
 		}
 
 		&.form-wrapper {

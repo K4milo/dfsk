@@ -2405,7 +2405,8 @@ body .navbar {
   padding: 1.25em 0; }
   body .navbar.affix {
     width: 100%;
-    transition: all 0.5s; }
+    transition: all 0.5s;
+    padding: 0; }
     body .navbar.affix .container-fluid #navbar ul.menu li a {
       padding: 1.25em 2em;
       transition: all 0.5s; }
@@ -2510,8 +2511,10 @@ body .navbar {
         min-height: 38.5em; } }
     #contact-form > div.img-holder {
       background-image: url("../img/misc/bg_form.png");
-      background-size: cover;
-      background-position: center center; }
+      background-repeat: no-repeat;
+      background-color: #000000;
+      background-size: contain;
+      background-position: bottom center; }
     #contact-form > div.form-wrapper h2 {
       text-align: center;
       text-transform: uppercase; }

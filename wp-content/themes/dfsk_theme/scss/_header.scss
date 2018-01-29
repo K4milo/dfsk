@@ -7,6 +7,7 @@ body {
 		&.affix{
 			width: 100%;
 			transition: all 0.5s;
+			padding: 0;
 			.container-fluid {
 				#navbar {
 					ul {
