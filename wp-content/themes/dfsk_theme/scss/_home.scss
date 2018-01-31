@@ -161,6 +161,9 @@ body {
 							width: 96%;
 							margin: 2%;
 							cursor: pointer;
+							background-size: cover;
+							background-position: center center;
+							height: 340px;
 							&:hover {
 								opacity:0.75; 
 							}
@@ -170,17 +173,13 @@ body {
 								width: 45%;
 								vertical-align: top;
 								margin: 4% 2%;
+								height: 180px;
 								&:hover {
 									opacity:0.75; 
 								}
 							}
 							img{
-								width: 100%;
-								height: auto;
-								@include desktop {
-									width: auto;
-									height: 240px;
-								}
+								display: none;
 							}
 						}
 					}

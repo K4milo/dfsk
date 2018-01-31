@@ -22,7 +22,7 @@ Vehiculo Posts Loop
             </div>
             <div class="col-md-7 gallery">
                 <?php while(have_rows('cont_galeria')):the_row();?>
-                    <figure class="item-gallery" data-modal="<?php the_sub_field('f_imagen')?>">
+                    <figure class="item-gallery" data-modal="<?php the_sub_field('f_imagen')?>" style="background-image: url(<?php the_sub_field('f_imagen')?>);">
                         <img src="<?php the_sub_field('f_imagen')?>" alt="<?php the_title();?>">
                     </figure>
                 <?php endwhile ?>
